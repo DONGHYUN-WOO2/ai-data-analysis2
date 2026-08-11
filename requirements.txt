@@ -14,8 +14,4 @@ tabulate
 markdown
 requests
 beautifulsoup4
-<<<<<<< HEAD
 ipykernel
-=======
-ipykernel
->>>>>>> 082d59fc13cebbca1fb4228a3d9d3fc8c948af56

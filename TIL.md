@@ -52,4 +52,25 @@ VALUES
 select *  -> *는 전체. 일부만 조회하고 싶으면 * 대신 다른 값(ex.name, email) 넣으면 됨
 from practice.members;
 
-* 
+* 이름으로 특정 회원 찾기
+select *
+from practice.members
+where name = '홍길동';
+
+* update - 데이터 수정하기 
+update practice.members
+set age = 26
+where name = '홍길동';
+
+* delete - 데이터 삭제하기
+먼저 삭제한 데이터 확인. 
+SELECT *
+FROM practice.members
+WHERE name = '박민지';
+그 후 삭제
+DELETE FROM practice.members
+
+WHERE name = '박민지';
+
+** 여기서 중요한 부분! update나 delete 할때 where를 지정하지 않으면, 데이터 값 전체가 수정되거나 삭제될 수 있으므로 where으로 어떤 데이터가 선택되는지 확인하는게 좋다. 
+
